@@ -1,0 +1,128 @@
+.holiday-finder {
+    display: flex;
+    justify-content: center;
+    padding: 8vh 10vw;
+    width: 100%;
+    flex-direction: row;
+    gap: 8vw;
+}
+
+.holiday-finder_selection_part {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 2vh;
+}
+
+.traveler_img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.holiday-finder_h3 {
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #202336;
+}
+
+.action-btn_filled {
+    background-color: #FB8F1D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    width: 15vw;
+    height: 6vh;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.action-btn_filled:hover {
+    transform: translateY(-0.5vh);
+}
+
+.holiday-finder_txt {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.holiday-finder_h1 {
+    width: 30vw;
+    height: auto;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 7vw;
+    color: #202336;
+    mix-blend-mode: normal;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.option-container select {
+    padding: 10px 25px;
+    box-sizing: border-box;
+    width: 18vw;
+    height: 6vh;
+    border: 0.08vh solid #AFB0B9;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #4A4C53;
+}
+
+
+@media screen and (max-width: 768px) {
+    .holiday-finder {
+        flex-direction: column;
+    }
+
+    .holiday-finder_txt{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .holiday-finder_h1{
+        width: 100%;
+        font-size: 9vw;
+        text-align: center;
+    }
+
+    .options-container{
+        flex-direction: column;
+    }
+
+    .holiday-finder_selection_part{
+        margin: 0 auto;
+        align-items: center;
+
+    }
+
+    .option-container select {
+        width: 50vw;
+    }
+
+
+    .action-btn_filled{
+        width: 50vw;
+    }
+
+}
